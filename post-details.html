@@ -177,7 +177,7 @@ async function fetchBlogDetails() {
   }
 
   try {
-    const response = await fetch(`http://localhost:5000/api/blogs/${blogId}`);
+    const response = await fetch(`http://104.247.164.235:5000/api/blogs/${blogId}`);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }

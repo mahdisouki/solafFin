@@ -159,7 +159,7 @@
   // Function to fetch blog posts using fetch
   async function fetchBlogPosts() {
     try {
-      const response = await fetch('http://localhost:5000/api/blogs');
+      const response = await fetch('http://104.247.164.235:5000/api/blogs');
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }

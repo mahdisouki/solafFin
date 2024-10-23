@@ -222,7 +222,7 @@
 
     if (blogId) {
         // Fetch the blog details from the server
-        fetch(`http://localhost:5000/api/blogs/${blogId}`)
+        fetch(`http://104.247.164.235:5000/api/blogs/${blogId}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Blog not found');
