@@ -146,25 +146,33 @@
 
     <div class="row">
       <div  class="col-lg-8">
-        <form style="border-radius: 32px;"  class="content-form" id="contact-form" method="post">
+        <form style="border-radius: 32px;" class="content-form" id="contact-form" method="post">
           <h4>Let’s Get in Touch</h4>
+        
           <div class="inputbox">
-            <input style="border-radius:8px ;" type="text" name="Complete_Name" placeholder="Complete Name" required="">
+            <input style="border-radius:8px;" type="text" name="Complete_Name" placeholder="Complete Name" required>
           </div>
+        
           <div class="inputbox">
-            <input style="border-radius:8px ;"  type="email" name="Email_Address" placeholder="Email Address" required="">
+            <input style="border-radius:8px;" type="email" name="Email_Address" placeholder="Email Address" required>
           </div>
-          <div style="border-radius:8px;">
+        
+          <div class="inputbox">
             <select style="border-radius:8px;" name="Service" class="nice-select Advice" required>
-                <option value="" disabled selected>Select Service</option>
-                <!-- Options will be dynamically populated here -->
+              <option value="" disabled selected>Select Service</option>
+              <option value="Consulting">Consulting</option>
+              <option value="Web Design">Web Design</option>
+              <option value="SEO Services">SEO Services</option>
             </select>
-        </div>
-          <div class="textareabox">
-            <textarea style="border-radius:8px ;" placeholder="Message"></textarea>
           </div>
+        
+          <div class="textareabox">
+            <textarea style="border-radius:8px;" name="Message" placeholder="Message" required></textarea>
+          </div>
+        
           <button style="border-radius: 4px;" type="submit" class="btn bk">Submit Now</button>
         </form>
+        
       </div>
       <div  class="col-lg-4">
         <div style="border-radius:16px ;" class="content-page-info">
@@ -179,7 +187,7 @@
                 <path d="M17.4997 9.77051C15.0331 9.77051 13.0264 11.7773 13.0264 14.2438C13.0264 16.7104 15.0331 18.7171 17.4997 18.7171C19.9663 18.7171 21.973 16.7104 21.973 14.2438C21.973 11.7773 19.9662 9.77051 17.4997 9.77051Z" fill="black"/>
                 <path d="M27.9679 4.33576C25.172 1.53979 21.4545 0 17.5005 0C13.5464 0 9.82899 1.53979 7.03309 4.33576C4.23706 7.1318 2.69727 10.8492 2.69727 14.8032C2.69727 22.8021 10.2605 29.4552 14.3238 33.0295C14.8884 33.5262 15.376 33.9551 15.7644 34.3178C16.2512 34.7727 16.8757 35 17.5004 35C18.1251 35 18.7498 34.7726 19.2365 34.318C19.625 33.9551 20.1125 33.5262 20.6771 33.0295C24.7404 29.4552 32.3036 22.8022 32.3036 14.8032C32.3036 10.8492 30.7638 7.1318 27.9679 4.33576ZM17.5005 20.7674C13.9033 20.7674 10.977 17.841 10.977 14.2438C10.977 10.6467 13.9033 7.7203 17.5005 7.7203C21.0976 7.7203 24.024 10.6467 24.024 14.2438C24.024 17.841 21.0976 20.7674 17.5005 20.7674Z" fill="black"/>
                 </svg></i></div>
-          <h5>12/7 new town, 245x Town 1214 Street, United State</h5>
+          <h5>000 , KORTUM CITE TURKI , SOUSSE 4000</h5>
         </div>
         <br/>
         <div style="border-radius:16px ;" class="content-page-info">
@@ -253,7 +261,7 @@
             </i></div>
             <div>
               <span>Phone No:</span> 
-              <h6><a href="callto:+1(251)3441354">+1 0109 -1812-347</a></h6>
+              <h6><a href="callto:+1(251)3441354">+21627004165</a></h6>
             </div>
           </div>
           <div class="get-in-touch">
@@ -269,7 +277,7 @@
             </i></div>
             <div>
               <span>Email Address:</span> 
-              <h6><a href="mailto:username@domain.com">username@domain.com</a></h6>
+              <h6><a href="mailto:Mouna@istanbulsolar.net">Mouna@istanbulsolar.net</a></h6>
             </div>
           </div>
           <div class="get-in-touch">
@@ -282,7 +290,7 @@
               </svg>
             </i></div>
             <div>
-              <span class="pt-2 pb-0">12/7 new town, 245x Town 1214 Street, United State</span>
+              <span class="pt-2 pb-0">000 , KORTUM CITE TURKI , SOUSSE 4000</span>
             </div>
           </div>
         </div>
@@ -425,7 +433,12 @@
       fetchServices();
   });
 </script>
-
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function() {
+      emailjs.init('Y72k5bGQBWr-jiCg_'); // Replace 'YOUR_USER_ID' with your EmailJS User ID
+   })();
+</script>
 <!-- Bootstrap Js -->
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- fancybox -->
